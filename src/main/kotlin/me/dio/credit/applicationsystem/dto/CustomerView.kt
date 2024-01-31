@@ -13,7 +13,7 @@ data class CustomerView(
     val street: String
 ) {
     constructor(customer: Customer) : this(
-        fistName = customer.fistName,
+        fistName = customer.firstName,
         lastName = customer.lastName,
         cpf = customer.cpf,
         income = customer.income,

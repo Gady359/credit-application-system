@@ -16,7 +16,7 @@ data class CreditDto(
     @field :NotNull(message ="Invalid input") val creditValue: BigDecimal,
     @field :Future val dayFirstInstallment: LocalDate,
     @field :Min(value = 1, message = "Number of installments cannot be zero")
-    @field:Max(value = 24, message = "Number of installments cannot be greater than 24")
+    @field:Max(value = 48, message = "Number of installments cannot be greater than 48")
     val numberOfInstallments: Int,
     @field :NotNull(message ="Invalid input") val customerId: Long
 ) {

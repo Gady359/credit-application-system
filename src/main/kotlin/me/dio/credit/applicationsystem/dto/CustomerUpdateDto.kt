@@ -13,7 +13,7 @@ data class CustomerUpdateDto(
     @field :NotEmpty(message = "Invalid input")val street: String
 ) {
     fun toEntity(customer: Customer): Customer {
-        customer.fistName = this.fistName
+        customer.firstName = this.fistName
         customer.lastName = this.lastName
         customer.income = this.income
         customer.address.street = this.street
