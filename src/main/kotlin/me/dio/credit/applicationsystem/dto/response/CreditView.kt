@@ -1,4 +1,4 @@
-package me.dio.credit.applicationsystem.dto
+package me.dio.credit.applicationsystem.dto.response
 
 
 import me.dio.credit.applicationsystem.entity.Credit

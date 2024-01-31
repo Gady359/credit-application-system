@@ -1,4 +1,4 @@
-package me.dio.credit.applicationsystem.dto
+package me.dio.credit.applicationsystem.dto.request
 
 import jakarta.validation.constraints.Email
 import jakarta.validation.constraints.NotEmpty
@@ -10,7 +10,7 @@ import java.math.BigDecimal
 
 data class CustomerDto(
 
-    @field :NotEmpty(message = "Invalid input") val fistName: String,
+    @field :NotEmpty(message = "Invalid input") val firstName: String,
     @field :NotEmpty(message = "Invalid input") val lastName: String,
     @field :CPF(message = "Invalid CPF") val cpf: String,
     @field :NotNull(message ="Invalid input") val income: BigDecimal,
@@ -21,7 +21,7 @@ data class CustomerDto(
 ) {
 
     fun toEntity(): Customer = Customer(
-        firstName = this.fistName,
+        firstName = this.firstName,
         lastName = this.lastName,
         cpf = this.cpf,
         income = this.income,

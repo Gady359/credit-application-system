@@ -1,4 +1,4 @@
-package me.dio.credit.applicationsystem.dto
+package me.dio.credit.applicationsystem.dto.request
 
 import java.math.BigDecimal
 import jakarta.persistence.*
